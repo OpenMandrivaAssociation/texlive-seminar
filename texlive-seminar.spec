@@ -70,6 +70,7 @@ once part of the bundle, but now has a separate existence.
 %doc %{_texmfdistdir}/doc/latex/seminar/tvz-code.sty
 %doc %{_texmfdistdir}/doc/latex/seminar/tvz-hax.sty
 %doc %{_texmfdistdir}/doc/latex/seminar/tvz-user.sty
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -80,3 +81,5 @@ once part of the bundle, but now has a separate existence.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}

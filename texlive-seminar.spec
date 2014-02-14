@@ -1,12 +1,12 @@
-# revision 18322
+# revision 32762
 # category Package
 # catalog-ctan /macros/latex/contrib/seminar
-# catalog-date 2010-05-17 14:53:01 +0200
+# catalog-date 2014-01-20 13:04:19 +0100
 # catalog-license lppl1.2
-# catalog-version 1.5
+# catalog-version 1.61
 Name:		texlive-seminar
-Version:	1.5
-Release:	6
+Version:	1.61
+Release:	1
 Summary:	Make overhead slides
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/seminar
@@ -41,6 +41,7 @@ once part of the bundle, but now has a separate existence.
 %files
 %{_texmfdistdir}/tex/latex/seminar/npsfont.sty
 %{_texmfdistdir}/tex/latex/seminar/sem-a4.sty
+%{_texmfdistdir}/tex/latex/seminar/sem-dem.sty
 %{_texmfdistdir}/tex/latex/seminar/sem-page.sty
 %{_texmfdistdir}/tex/latex/seminar/semcolor.sty
 %{_texmfdistdir}/tex/latex/seminar/semhelv.sty
@@ -52,15 +53,26 @@ once part of the bundle, but now has a separate existence.
 %{_texmfdistdir}/tex/latex/seminar/semlcmss.sty
 %{_texmfdistdir}/tex/latex/seminar/semrot.sty
 %{_texmfdistdir}/tex/latex/seminar/slidesec.sty
-%doc %{_texmfdistdir}/doc/latex/seminar/read-me.2e
-%doc %{_texmfdistdir}/doc/latex/seminar/sem-read.me
-%doc %{_texmfdistdir}/doc/latex/seminar/sem-user.pdf
-%doc %{_texmfdistdir}/doc/latex/seminar/sem-user.tex
+%{_texmfdistdir}/tex/latex/seminar/tvz-code.sty
+%{_texmfdistdir}/tex/latex/seminar/tvz-hax.sty
+%{_texmfdistdir}/tex/latex/seminar/tvz-user.sty
+%doc %{_texmfdistdir}/doc/latex/seminar/Changes
+%doc %{_texmfdistdir}/doc/latex/seminar/README
+%doc %{_texmfdistdir}/doc/latex/seminar/run.sh
+%doc %{_texmfdistdir}/doc/latex/seminar/sem-code.tex
+%doc %{_texmfdistdir}/doc/latex/seminar/sem-make.tex
+%doc %{_texmfdistdir}/doc/latex/seminar/seminar-doc.pdf
+%doc %{_texmfdistdir}/doc/latex/seminar/seminar-doc.tex
+%doc %{_texmfdistdir}/doc/latex/seminar/seminar.bg3
+%doc %{_texmfdistdir}/doc/latex/seminar/seminar.con
+%doc %{_texmfdistdir}/doc/latex/seminar/seminar.doc
+%doc %{_texmfdistdir}/doc/latex/seminar/semlayer.doc
+%doc %{_texmfdistdir}/doc/latex/seminar/semsamp1.pdf
 %doc %{_texmfdistdir}/doc/latex/seminar/semsamp1.tex
+%doc %{_texmfdistdir}/doc/latex/seminar/semsamp2.pdf
 %doc %{_texmfdistdir}/doc/latex/seminar/semsamp2.tex
-%doc %{_texmfdistdir}/doc/latex/seminar/tvz-code.sty
-%doc %{_texmfdistdir}/doc/latex/seminar/tvz-hax.sty
-%doc %{_texmfdistdir}/doc/latex/seminar/tvz-user.sty
+%doc %{_texmfdistdir}/doc/latex/seminar/semsamp3.pdf
+%doc %{_texmfdistdir}/doc/latex/seminar/semsamp3.tex
 
 #-----------------------------------------------------------------------
 %prep
@@ -71,17 +83,3 @@ once part of the bundle, but now has a separate existence.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.5-2
-+ Revision: 755906
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.5-1
-+ Revision: 719504
-- texlive-seminar
-- texlive-seminar
-- texlive-seminar
-- texlive-seminar
-

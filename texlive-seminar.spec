@@ -6,7 +6,7 @@
 # catalog-version 1.61
 Name:		texlive-seminar
 Version:	1.62
-Release:	1
+Release:	2
 Summary:	Make overhead slides
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/seminar

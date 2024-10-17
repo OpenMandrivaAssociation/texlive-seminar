@@ -3,7 +3,7 @@ Version:	59801
 Release:	2
 Summary:	Make overhead slides
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/seminar
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/seminar
 License:	LPPL1.2
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/seminar.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/seminar.doc.r%{version}.tar.xz
